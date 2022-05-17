@@ -1,0 +1,77 @@
+##########Easy problems
+
+1. Neither Oliver nor Blake like being in the air. There are two airborn activities,
+but Abigail doesn't like rock climbing. So that leaves the other airborn activity for
+Abigail, who likes ziplining. The other airborn activity then has to go to Rosa: rock
+climbing. Then Oliver has to be the kayaker, since Blake wants his feet on the ground.
+That makes Blake the cook.
+
+2. Examining possibilities from the clues:
+iteration 1:
+Pepper = {burying}
+Ginger = {scratch, catch, nap, burying}
+Saber = {catch, nap, burying}
+Bear = {catch, burying}
+Nutmeg = {scratch, walk}
+
+interation 2:
+Pepper = {burying}
+Ginger = {scratch, catch, nap}
+Saber = {catch, nap}
+Bear = {catch}
+Nutmeg = {scratch, walk}
+
+interation 3:
+Pepper = {burying}
+Ginger = {scratch}
+Saber = {nap}
+Bear = {catch}
+Nutmeg = {scratch, walk}
+
+interation 4:
+Pepper = {burying}
+Ginger = {scratch}
+Saber = {nap}
+Bear = {catch}
+Nutmeg = {walk}
+
+
+3. The clues give this order, taller people are rightward:
+
+Delia - Weldon - Zina
+Benito - Leisha - Delia - Weldon
+{constraint that Benito is not shortest}
+
+The only person left to slot as shortest is Charlotte. So from left to right, are the 
+people from shortest to tallest:
+
+Charlotte, Benito, Leisha, Delia, Weldon, Zina
+
+
+#############Medium problems
+
+1. From the clues, the 3 grads are {Stephanie, Elias, James} and the 3 dads are 
+{Michael, Ken, Alberto}. Let's map dads to possible kids:
+
+Michael = {Elias, James}
+Ken = {Stephanie, Elias, James}
+Alberto = {Elias, James}
+
+Iteration 2: Michael and Elias are not related
+
+Michael = {James}
+Ken = {Stephanie}
+Alberto = {Elias}
+
+
+2. Some clues visualized:
+
+I tried but I'm not sure about this one.
+
+
+
+
+
+
+
+
