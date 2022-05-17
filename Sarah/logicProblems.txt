@@ -1,0 +1,220 @@
+Sarah
+Easy Problem 1:
+
+
+Who are the children: Oliver, Blake, Abigail, Rosa
+
+Step 1:
+    Check what each child cannot do
+        -Oliver and Blake like being on the ground, therefore no rock climbing or ziplining
+		-Abigail doesn't rock climb.
+
+Step 2:
+    Match based on what each child likes:
+        -Rosa needs a harness, so we know she does an airborne activity. 
+		-There are two airborne activities, assume rock climbing doesn’t need a harness so.that leaves ziplining to Abigail.
+
+Step 3:
+    Figure out all the remaining activites
+        -Blake likes to be on the ground so cooking is best match
+		-Oliver remaining therefore he has kayaking
+
+So:
+Abigail -> ziplining
+Rosa -> rock climbing
+Blake -> cooking
+Oliver -> kayaking
+
+==================
+
+Easy Problem 2 : 
+
+Step 1: 
+What activities can they not do: 
+	-Ginger/Saber/Bear are NOT on a walk 
+	-Pepper is not getting it’s ear scratched, taking a nap, or going for a walk
+Step 2
+What activities are they potentially doing?:
+	-Pepper is playing catch or burying a chew toy
+	-Ginger, Nutmeg, Pepper may be getting their ears scratched
+	-Saber, Bear may be playing catch
+	-Bear is getting some exercise 
+Step 3
+Based on what we know decide who is doing what:
+        -Bear -> Playing catch since only other exercise and not spice
+        -Pepper -> burying chew toy since bear is playing catch
+        -Saber -> taking nap since not getting ear scratched and and not going for walk
+        -Nutmeg -> is on a walk  since ginger can’t be on a walk
+        -Ginger -> By process of elimination must be getting it’s ear scratched and has a spice name
+    
+
+Pepper  - buying a chew toy
+Saber -  taking a nap 
+Ginger -   Ears scratch
+Nutmeg - On a walk
+Bear - Catch 
+
+=====================
+
+Easy Problem 3:
+
+There is six children: Leisha, Benito, Delia, Charlotte, Weldon, and Zina
+
+Step 1:
+Constraints (what we know):
+-Welden	-> taller than delia 
+        -> Shorter than Zina
+
+-Leisha	-> Taller than Benito
+        ->Shorter than Delia & Weldon
+
+-Benito	-> not the shortest
+
+Step 2:
+
+Visual representation: Sort by shortest to tallest based on given information
+
+Delia < Weldon < Zina
+Benito < Leisha < Delia
+
+Use visuals to create a list.
+Charlotte not mentioned, so assumed the shortest
+
+Charlotte < Benito < Leisha < Delia < Weldon < Zina
+
+===================
+
+Medium Problem 1:
+
+Who are the people?: Michael, Ken, James, Alberto, Elias, and Stephanie
+
+Step 1:
+
+What do we know?:
+Three fathers
+Three graduates
+
+Stephanie -> Prom with Micheal’s Son
+Elias & James -> Same basketball team -> One is son of Alberto
+Micheal and Elias -> Not related
+
+Step 2:
+Who can be in a potential parent/graduate group?
+
+-Micheal is a parent bc he has a son
+-Stephanie -> Graduate b/c she went with son of Micheal to prom
+-Alberto is parent as he has a son 
+-Alberto’s son is Elias since Michael and Elias are not related
+
+Known groups so far:
+Fathers:
+-Micheal 
+-Alberto
+
+Graduates:
+-Stephanie
+-James
+
+-Since Elias and James are on the same basketball team, it can be assumed that Elias is a graduate
+
+So by process of elimination and three of each group: ken is a father
+
+Fathers:
+-Micheal 
+-Alberto
+-Ken
+
+Graduates:
+-Stephanie
+-James
+-Elias
+
+Step 3:
+To match them together:
+We know Alberto is Elias’ Father
+We know Micheal has a son so James is his son
+Stephanie and Ken are family since both are not paired with anyone else.
+
+So:
+Alberto -> Elias
+Micheal -> James
+Ken -> Stephanie
+
+
+==============
+
+Medium Problem 2:
+
+Step 1:
+
+What do we know?:
+Seven Neighbours
+
+Daniel -> Can’t see Benita’s house -> can see greta’s since in the way
+Adam -> Directly across from Daniel
+Benita -> Elena lives west of them
+Elena -> Cross three streets to Franco’s home
+Hal -> East of Benita
+
+Step 2:
+Can we come to a conclusion based on what we know?:
+	-Benita has Elena and Hal living west and east respectively, 
+	-Greta’s house is between Daniel’s and Benita’s
+	-Adam lives across from Daniel
+	-Franco lives three streets away from Elena
+
+
+-But without knowing the location of the houses on a map, there is no definitive way to know the answer
+-Where Charlie’s house can be is arbitrary since each neighbour can have large gaps between each house because the distance between each house is not stated outside of franco.
+-There is also no information given on the location of Charlie's house relative to his neighbours further reinforcing the need of the diagram.
+
+
+Therefore, this puzzle cannot be solved definitively.
+
+========
+
+Hard Problem 1
+
+What do we know?:
+3 have sugar in them, 1 has salt
+Only one message is telling the truth
+
+Takes each one message as true and the other three as false.
+
+Step 1:
+Assume A is true:
+If A is true:
+-A is Salt
+-B is Sugar
+-C is Salt
+
+This is a contradiction since if A is true then C cannot be true. Only 1 Salt.
+
+Step 2:
+Assume B is true:
+If B is true:
+-A is sugar
+-B is salt
+-C is salt
+
+This is a contradiction as there can only be one salt. B and C cannot be salt.
+
+Step 3:
+Assume C is true:
+If C is true:
+-A is sugar
+-B is sugar
+-C is sugar
+-D says B has salt
+
+This is a contradiction since if B has sugar it’s a false statement, D contradicts it.
+
+Step 4:
+Assume D is true:
+If D is true:
+-A is sugar
+-B is sugar
+-C is salt
+-D says that B is sugar
+
+All statements when D is true are consistent. Therefore C has the salt.
