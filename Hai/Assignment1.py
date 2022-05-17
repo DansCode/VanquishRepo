@@ -1,4 +1,4 @@
-#This will check if the user input is an identifier or not. The while loop will continue
+#This will check if the user input is an Keyword or not. The while loop will continue
 #until the user  provides a valid input. 
 
 # import keyword
