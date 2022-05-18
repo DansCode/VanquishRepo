@@ -24,15 +24,10 @@ for val in dictC:
             reduced[key] = val[key]
 
 #update last key to reflect how many times there was an intersection
-updated = dict()
-for key in reduced:
-    if key is not list(reduced)[-1]:
-        updated[key] = reduced[key]
-    else:
-        updated[key] = reduced[key] + timesAdded
+reduced[key] = reduced[key] + timesAdded
 
 #append to final list
-for key in updated:
+for key in reduced:
     heightList.append(key)
 
 print("From shortest to tallest:\n" + str(heightList))
