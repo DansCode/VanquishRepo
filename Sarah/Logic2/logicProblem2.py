@@ -8,8 +8,6 @@ from models.container import Dogs
 # bear = ["catch", "burying"]
 # nutmeg = ["scratch", "walk"]
 
-visited = []
-
 def create_starting_dogs():
     pepper = Dogs("Pepper",  ["burying"])
     ginger = Dogs("Ginger",  ["scratch", "catch", "nap", "burying"])
@@ -20,7 +18,7 @@ def create_starting_dogs():
     dogs = [pepper, ginger, saber, bear, nutmeg]
     return dogs
 
-def removeMultipleOccurences(dogs):
+def removeMultipleOccurences(dogs, visited):
     curr = ""
     for i in range(len(dogs)):
         if (len(dogs[i].activities) == 1 and dogs[i].name not in visited):
@@ -36,12 +34,17 @@ def print_values(dogs):
     for dog in dogs:
         print(dog)
 
-def main():
+def loop_multiple_occurences(visited):
     dogs = create_starting_dogs()
     while len(visited) < len(dogs):
-        removeMultipleOccurences(dogs)
+        removeMultipleOccurences(dogs, visited)
+    return dogs
 
-    print_values(dogs)
+def main():
+    visited = []
+    updated_dogs = loop_multiple_occurences(visited)
+
+    print_values(updated_dogs)
 
 if __name__ == '__main__':
     main()
