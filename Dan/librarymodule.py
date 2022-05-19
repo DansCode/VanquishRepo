@@ -1,6 +1,7 @@
 def filterSets(sets):
     singleElementSets = []
-    singleElementSets.append(sets[sets.index([x for x in sets if len(x) == 1][0])])
+    for each in [x for x in sets if len(x) == 1]:
+        singleElementSets.append(sets[sets.index(each)])
 
     for singleton in singleElementSets:
         for i in range(len(sets)):
