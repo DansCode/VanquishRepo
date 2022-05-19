@@ -14,8 +14,6 @@ def filterSets(sets):
             if len(singleton.intersection(sets[i])) == 1 and len(sets[i]) > 1:
                 sets[i] = sets[i] - singleton
 
-    return singleElementSets
-
 
 while max([len(x) for x in people]) != 1:
     filterSets(people)
